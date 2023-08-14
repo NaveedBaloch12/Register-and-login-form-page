@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+    <title>Sign-Up | burgers.com</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="main_conatnier">
+        <section class="image__section">
+            <img src="img/bg_1.jpg" alt="Burger Image">
+
+            <div class="logo__section">
+                <img src="img/logo.png" alt="Logo">
+                <span class="logo__text">burgers.com</span>
+            </div>
+
+            <div class="image__refferance">Photo by <span>Engagal Nukti</span> on <span>Unsplash</span></div>
+        </section>
+
+        <section class="login__form">
+            <div class="login__text">
+                <p>This is not a real online service! You know you need something like this is your like to help you
+                    realize
+                    your deepest dreams. <span>Sign Up now to get started</span></p>
+                <p>You know you want to.</p>
+            </div>
+
+            <form action="" method="">
+                <h3 class="heading">Let's do this! </h3>
+                <div class="inputs_labels">
+                    <div>
+                        <label for="firstname">first name: *</label>
+                        <input type="text" name="firstName" id="firstname" placeholder="Mr. Jhon" required>
+                    </div>
+                    <div>
+                        <label for="lastname">last name: *</label>
+                        <input type="text" name="lastName" id="lastname" placeholder="Doe" required>
+                    </div>
+                </div>
+
+                <div class="inputs_labels">
+                    <div>
+                        <label for="email">Email: *</label>
+                        <input type="email" name="Email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="phone">phone number: *</label>
+                        <input type="tel" minlength="13" maxlength="13" name="Phone" id="phone"
+                            placeholder="+XX XXX XXXXXXX" required>
+                    </div>
+                </div>
+
+                <div class="inputs_labels">
+                    <div>
+                        <label for="password">password: *</label>
+                        <input type="password" name="Password" id="password" maxlength="20"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">confirm password: *</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+
+
+            <div class="log_in">
+                Already have an account?<a href="pages/login.html">Log In</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        Coded by <a href="https://github.com/NaveedBaloch12">Naveed Hassan</a>
+    </footer>
+
+</body>
+
+</html>
